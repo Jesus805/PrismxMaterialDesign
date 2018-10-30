@@ -13,10 +13,8 @@ namespace PrismxMaterialDesign.MainModule
             _manager = containerProvider.Resolve<IRegionManager>();
             var regions = _manager.Regions;
             regions["MainRegion"].Add(containerProvider.Resolve<MainView>());
-            // This will throw an exception because "RightDrawerRegion" doesn't exist
-            //regions["RightDrawerRegion"].Add(containerProvider.Resolve<RightDrawerView>());
-            // However this works
-            _manager.RegisterViewWithRegion("RightDrawerRegion", typeof(RightDrawerView));
+
+            regions["Test"].Add(containerProvider.Resolve<RightDrawerView>());
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry) {}

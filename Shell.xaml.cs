@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using Prism.Ioc;
+using Prism.Regions;
+using System.Windows;
 
 namespace PrismxMaterialDesign
 {
@@ -7,9 +9,17 @@ namespace PrismxMaterialDesign
     /// </summary>
     public partial class Shell : Window
     {
-        public Shell()
+        public Shell(IRegionManager manager)
         {
             InitializeComponent();
+
+            SetRegionManager(manager, RightDrawer, "Test");
+        }
+
+        public void SetRegionManager(IRegionManager manager, DependencyObject regionTarget, string regionName)
+        {
+            RegionManager.SetRegionName(regionTarget, regionName);
+            RegionManager.SetRegionManager(regionTarget, manager);
         }
     }
 }
