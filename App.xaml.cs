@@ -1,6 +1,7 @@
-﻿using CommonServiceLocator;
+﻿using MaterialDesignThemes.Wpf;
 using Prism.Ioc;
 using Prism.Modularity;
+using Prism.Regions;
 using Prism.Unity;
 using System;
 using System.Windows;

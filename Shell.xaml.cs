@@ -1,5 +1,4 @@
-﻿using Prism.Ioc;
-using Prism.Regions;
+﻿using Prism.Regions;
 using System.Windows;
 
 namespace PrismxMaterialDesign
@@ -13,7 +12,7 @@ namespace PrismxMaterialDesign
         {
             InitializeComponent();
 
-            SetRegionManager(manager, RightDrawer, "Test");
+            SetRegionManager(manager, RightDrawer, "RightDrawerRegion");
         }
 
         public void SetRegionManager(IRegionManager manager, DependencyObject regionTarget, string regionName)
