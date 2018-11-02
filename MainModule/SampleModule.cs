@@ -14,7 +14,7 @@ namespace PrismxMaterialDesign.MainModule
             var regions = _manager.Regions;
             regions["MainRegion"].Add(containerProvider.Resolve<MainView>());
 
-            regions["Test"].Add(containerProvider.Resolve<RightDrawerView>());
+            regions["RightDrawerRegion"].Add(containerProvider.Resolve<RightDrawerView>());
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry) {}
