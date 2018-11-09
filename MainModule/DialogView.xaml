@@ -1,15 +1,12 @@
-﻿<UserControl x:Class="PrismxMaterialDesign.MainModule.MainView"
+﻿<UserControl x:Class="PrismxMaterialDesign.MainModule.DialogView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PrismxMaterialDesign.MainModule"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d">
-    <StackPanel>
-        <Button Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}" 
-            CommandParameter="{x:Static Dock.Right}"
-            Content="Open Right Drawer"/>
-        <Button Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
-                Content="Open DialogHost"/>
-    </StackPanel>
+    <Grid>
+        <Button Content="Close DialogHost" Command="materialDesign:DialogHost.CloseDialogCommand"/>
+    </Grid>
 </UserControl>

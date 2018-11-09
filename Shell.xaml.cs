@@ -13,6 +13,7 @@ namespace PrismxMaterialDesign
             InitializeComponent();
 
             SetRegionManager(manager, RightDrawer, "RightDrawerRegion");
+            SetRegionManager(manager, Dialog, "DialogHostRegion");
         }
 
         public void SetRegionManager(IRegionManager manager, DependencyObject regionTarget, string regionName)

@@ -13,8 +13,10 @@ namespace PrismxMaterialDesign.MainModule
             _manager = containerProvider.Resolve<IRegionManager>();
             var regions = _manager.Regions;
             regions["MainRegion"].Add(containerProvider.Resolve<MainView>());
-
+            
             regions["RightDrawerRegion"].Add(containerProvider.Resolve<RightDrawerView>());
+
+            regions["DialogHostRegion"].Add(containerProvider.Resolve<DialogView>());
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry) {}
