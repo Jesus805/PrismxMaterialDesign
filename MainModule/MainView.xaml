@@ -7,9 +7,13 @@
              mc:Ignorable="d">
     <StackPanel>
         <Button Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}" 
-            CommandParameter="{x:Static Dock.Right}"
-            Content="Open Right Drawer"/>
+                CommandParameter="{x:Static Dock.Right}"
+                Content="Open Right Drawer"
+                Width="200"
+                Margin="10"/>
         <Button Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
-                Content="Open DialogHost"/>
+                Content="Open DialogHost"
+                Width="200"
+                Margin="10"/>
     </StackPanel>
 </UserControl>

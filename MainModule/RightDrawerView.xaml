@@ -5,5 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d">
-    <Button Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}">Open Dialog View</Button>
+    <Button Command="{x:Static materialDesign:DialogHost.OpenDialogCommand}"
+            Content="Open Dialog Host"
+            Margin="10"/>
 </UserControl>
